@@ -1,0 +1,41 @@
+.skillsContainer {
+  height: 700px;
+  background-image: url("../../assets/FondCircuits.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px;
+  margin-bottom: 150px;
+}
+.skillsContainer .skillsTitle {
+  margin-bottom: 50px;
+}
+.skillsContainer .squareContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  height: 350px;
+  flex-wrap: wrap;
+}
+.skillsContainer .squareContainer .info {
+  background-color: rgba(34, 34, 34, 0.897);
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  position: relative;
+}
+.skillsContainer .squareContainer .info .icon {
+  position: absolute;
+  top: -25px;
+  left: 125px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.63);
+}
+.skillsContainer .squareContainer .info .text {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}/*# sourceMappingURL=skills.css.map */

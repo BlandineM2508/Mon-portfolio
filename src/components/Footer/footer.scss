@@ -1,7 +1,58 @@
 .footerContainer {
   background-color: rgba(34, 34, 34, 0.897);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   margin-top: 150px;
+  flex-direction: row;
+  padding: 0px 40px;
+  position: relative;
+
+  .footerText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+  }
+
+  .arrow {
+    position: relative;
+    width: 50px;
+    top: -80px;
+    left: 0%;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0px 20px;
+    .footerText {
+      font-size: 1.1vh;
+    }
+    .arrow {
+      top: -75px;
+      left: 0%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding: 0px 20px;
+    .footerText {
+      font-size: 1.1vh;
+    }
+    .arrow {
+      width: 40px;
+      top: -70px;
+      left: 0%;
+    }
+  }
+
+  @media (max-width: 430px) {
+    padding: 0px 20px;
+    .footerText {
+      font-size: 1.2vh;
+    }
+
+    .arrow {
+      width: 35px;
+      left: 0%;
+    }
+  }
 }

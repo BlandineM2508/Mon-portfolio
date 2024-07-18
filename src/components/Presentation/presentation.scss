@@ -1,30 +1,167 @@
-.presentationContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 400px;
-  padding: 40px 30px 30px 30px;
-  border-radius: 10px;
+.margin {
+  margin: 0px 300px;
 
-  .presentationPhoto {
-    width: 230px;
-    height: 230px;
-    margin: 40px;
-    border-radius: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
-    filter: sepia(50%);
+  .glassyBG_Presentation {
+    background: rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 120px 0px 140px 0px;
+    position: relative;
+
+    .presentationContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 0px 30px 0px;
+      border-radius: 10px;
+
+      .presentationPhoto {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -100px;
+        border-radius: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.856);
+        filter: sepia(50%);
+      }
+
+      .presentationTextContainer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+
+        p {
+          width: 100%;
+          max-width: 600px;
+          text-align: left;
+        }
+      }
+    }
   }
 
-  .presentationTextContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p {
-      margin-top: -20px;
-      width: 600px;
-      text-align: justify;
+  @media (max-width: 1350px) {
+    margin: 70px 100px;
+
+    .glassyBG_Presentation {
+      margin: 0 10px 100px 10px;
+
+      .presentationContainer {
+        flex-direction: column;
+        text-align: center;
+
+        .presentationPhoto {
+          top: -90px;
+          width: 120px;
+          height: 120px;
+        }
+
+        .presentationTextContainer {
+          p {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 980px) {
+    margin: 0;
+
+    .glassyBG_Presentation {
+      margin: 80px 10px 100px 10px;
+
+      .presentationContainer {
+        flex-direction: column;
+        text-align: center;
+
+        .presentationPhoto {
+          top: -70px;
+          width: 120px;
+          height: 120px;
+        }
+
+        .presentationTextContainer {
+          p {
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    margin: 0;
+
+    .glassyBG_Presentation {
+      margin: 80px 10px 100px 10px;
+
+      .presentationContainer {
+        flex-direction: column;
+        text-align: center;
+
+        .presentationPhoto {
+          top: -60px;
+          left: 250px;
+          width: 100px;
+          height: 100px;
+        }
+
+        .presentationTextContainer {
+          p {
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 10px;
+
+    .glassyBG_Presentation {
+      .presentationContainer {
+        padding: 20px 10px;
+
+        .presentationPhoto {
+          top: -70px;
+          width: 80px;
+          height: 80px;
+          margin: 10px 0;
+        }
+
+        .presentationTextContainer {
+          p {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 415px) {
+    .glassyBG_Presentation {
+      .presentationContainer {
+        padding: 20px 10px;
+
+        .presentationPhoto {
+          left: 80%;
+          width: 80px;
+          height: 80px;
+          margin: 10px 0;
+        }
+
+        .presentationTextContainer {
+          p {
+            padding: 0 15px;
+          }
+        }
+      }
     }
   }
 }

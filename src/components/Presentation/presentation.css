@@ -1,28 +1,134 @@
-.presentationContainer {
+.margin {
+  margin: 0px 300px;
+}
+.margin .glassyBG_Presentation {
+  background: rgba(0, 0, 0, 0.247);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 120px 0px 140px 0px;
+  position: relative;
+}
+.margin .glassyBG_Presentation .presentationContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 400px;
-  padding: 40px 30px 30px 30px;
+  padding: 70px 0px 30px 0px;
   border-radius: 10px;
 }
-.presentationContainer .presentationPhoto {
-  width: 230px;
-  height: 230px;
-  margin: 40px;
+.margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100px;
   border-radius: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.856);
   filter: sepia(50%);
 }
-.presentationContainer .presentationTextContainer {
+.margin .glassyBG_Presentation .presentationContainer .presentationTextContainer {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px;
 }
-.presentationContainer .presentationTextContainer p {
-  margin-top: -20px;
-  width: 600px;
-  text-align: justify;
+.margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+@media (max-width: 1350px) {
+  .margin {
+    margin: 70px 100px;
+  }
+  .margin .glassyBG_Presentation {
+    margin: 0 10px 100px 10px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
+    top: -90px;
+    width: 120px;
+    height: 120px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
+    padding: 0;
+  }
+}
+@media (max-width: 980px) {
+  .margin {
+    margin: 0;
+  }
+  .margin .glassyBG_Presentation {
+    margin: 80px 10px 100px 10px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
+    top: -70px;
+    width: 120px;
+    height: 120px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 650px) {
+  .margin {
+    margin: 0;
+  }
+  .margin .glassyBG_Presentation {
+    margin: 80px 10px 100px 10px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
+    top: -60px;
+    left: 250px;
+    width: 100px;
+    height: 100px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 480px) {
+  .margin {
+    margin: 0 10px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer {
+    padding: 20px 10px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
+    top: -70px;
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 415px) {
+  .margin .glassyBG_Presentation .presentationContainer {
+    padding: 20px 10px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
+    left: 80%;
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
+    padding: 0 15px;
+  }
 }/*# sourceMappingURL=presentation.css.map */

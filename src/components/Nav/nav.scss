@@ -1,26 +1,34 @@
 .navContainer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding: 0 90px 0 90px;
+  flex-direction: column;
   margin-bottom: 100px;
-  width: 100%;
   position: relative;
 
+  h1 {
+    padding: 5px 0px 5px 20px;
+    text-align: left;
+  }
+
   nav {
+    padding: 0px 150px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 400;
     font-style: normal;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.315);
+    justify-content: center;
+    align-items: center;
 
     ul {
       display: flex;
       text-decoration: none;
       list-style: none;
-      gap: 30px;
+      justify-content: space-between;
+      width: 100%;
+      padding: 5px 0px;
+      margin: 0;
 
       li {
         display: flex;
@@ -31,6 +39,66 @@
           text-shadow: 0 0 2px rgba(255, 255, 255, 0.925);
           cursor: pointer;
           transform: scale(105%);
+        }
+
+        a {
+          text-decoration: none;
+          color: aliceblue;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 868px) {
+    padding: 0 20px;
+    margin-bottom: 50px;
+
+    nav {
+      ul {
+        li {
+          font-size: 2.2vw;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 0 20px;
+    margin-bottom: 50px;
+    h1 {
+      font-size: 3vw;
+    }
+
+    nav {
+      ul {
+        gap: 20px;
+        display: none;
+
+        li {
+          font-size: 1.8vw;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 10px;
+
+    h1 {
+      font-size: 2vh;
+    }
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+
+      ul {
+        flex-direction: column;
+        gap: 15px;
+        display: none;
+
+        li {
+          font-size: 16px;
         }
       }
     }

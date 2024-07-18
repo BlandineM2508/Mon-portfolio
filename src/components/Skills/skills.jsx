@@ -8,56 +8,37 @@ import Git from '../../assets/Git.png'
 
 function Skills() {
   return (
-    <div className=" skillsContainer">
+    <div className=" skillsContainer" id="skills">
       <h2 className="skillsTitle">Mes skills</h2>
       <div className="squareContainer">
         <div className="info BoxShadow_Orange">
           <img alt="icone html" className="icon" src={Html} />
-          <p className="text">
-            blop bkjkwjrkwjrk lejkwrjklwjrklwje krkwjrkejkr jklwj rlkw ejtrtr
-            frwrw wewewew
-          </p>
+          <p className="text">Utilisation du langage de balisage HTML.</p>
         </div>
         <div className="info BoxShadow_Yellow">
           <img alt="icone javascript" className="icon" src={Js} />
-          <p className="text">
-            blop bkjkwjrkwjrk lejkwrjklwjrklwje krkwjrkejkr jklwj rlkw ejtrtr
-            frwrw wewewew
-          </p>
+          <p className="text">Utilisation des bases du langage CSS.</p>
         </div>
         <div className="info BoxShadow_Blue">
           <img alt="icone react" className="icon" src={ReactIcon} />
-          <p className="text">
-            blop bkjkwjrkwjrk lejkwrjklwjrklwje krkwjrkejkr jklwj rlkw ejtrtr
-            frwrw wewewew
-          </p>
+          <p className="text">Utilisation de React.</p>
         </div>
         <div className="info BoxShadow_Pink">
           <img alt="icone sass" className="icon" src={Sass} />
           <p className="text">
-            blop bkjkwjrkwjrk lejkwrjklwjrklwje krkwjrkejkr jklwj rlkw ejtrtr
-            frwrw wewewew
+            Utilisation du préprocesseur SASS et de sa synthaxe.
           </p>
         </div>
         <div className="info BoxShadow_Purple">
           <img alt="icone redux" className="icon" src={Redux} />
           <p className="text">
-            blop bkjkwjrkwjrk lejkwrjklwjrklwje krkwjrkejkr jklwj rlkw ejtrtr
-            frwrw wewewew
+            Utilistion de Redux au sein d&apos;une application React.
           </p>
         </div>
         <div className="info BoxShadow_Green">
           <img alt="icone git" className="icon" src={Git} />
           <p className="text">
-            blop bkjkwjrkwjrk lejkwrjklwjrklwje krkwjrkejkr jklwj rlkw ejtrtr
-            frwrw wewewew
-          </p>
-        </div>
-        <div className="info BoxShadow_Green">
-          <img alt="icone git" className="icon" src={Git} />
-          <p className="text">
-            blop bkjkwjrkwjrk lejkwrjklwjrklwje krkwjrkejkr jklwj rlkw ejtrtr
-            frwrw wewewew
+            Utilisation de Git et GitHub afin de versionner mon travail.
           </p>
         </div>
       </div>

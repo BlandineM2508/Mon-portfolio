@@ -11,6 +11,7 @@ function Contact() {
 
   const [errors, setErrors] = useState({})
   const [successMessage, setSuccessMessage] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -29,11 +30,17 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (validateForm()) {
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }
+
       emailjs
         .send(
           'service_5msn4n9',
-          'template_c0wo1zc',
-          formData,
+          'template_m0x2y2w',
+          templateParams,
           'Zyrz4TxDFhS_-4flC'
         )
         .then(
@@ -41,50 +48,58 @@ function Contact() {
             console.log(result.text)
             setSuccessMessage('Message envoyé !')
             setFormData({ name: '', email: '', message: '' })
+            setErrorMessage('')
           },
           (error) => {
             console.log(error.text)
+            setErrorMessage("Une erreur s'est produite, veuillez réessayer.")
           }
         )
     }
   }
 
   return (
-    <div className="glassyBG_3 contactContainer">
-      <h2 className="sectionTitle">Contactez-moi !</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="formContainer">
-          <label>Nom:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          {errors.name && <span>{errors.name}</span>}
-        </div>
-        <div className="formContainer">
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {errors.email && <span>{errors.email}</span>}
-        </div>
-        <div className="formContainer">
-          <label>Message:</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-          {errors.message && <span>{errors.message}</span>}
-        </div>
-        <button type="submit">Send</button>
-        {successMessage && <p>{successMessage}</p>}
-      </form>
+    <div className="sectionContact">
+      <div className="contactContainer" id="contact">
+        <h2>Contactez-moi !</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="formContainer">
+            <label>Nom:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="name"
+            />
+            {errors.name && <span>{errors.name}</span>}
+          </div>
+          <div className="formContainer">
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="email"
+            />
+            {errors.email && <span>{errors.email}</span>}
+          </div>
+          <div className="formContainer">
+            <label>Message:</label>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="message"
+            />
+            {errors.message && <span>{errors.message}</span>}
+          </div>
+          <button type="submit">Send</button>
+          {successMessage && <p className="successMsg">{successMessage}</p>}
+          {errorMessage && <p className="errorMsg">{errorMessage}</p>}
+        </form>
+      </div>
     </div>
   )
 }

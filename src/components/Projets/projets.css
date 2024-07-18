@@ -2,38 +2,46 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 180px;
 }
-
-.gridContainer {
+.projetsContainer .gridContainer {
   display: grid;
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
-  margin: 50px 50px 50px 50px;
+  margin: 50px;
 }
-.gridContainer a {
+.projetsContainer .gridContainer .cardContainer {
+  width: 100%;
   position: relative;
-  width: 100%;
-  height: 400px;
+  height: 520px;
+  z-index: 1;
 }
-.gridContainer a .projetsImg {
+.projetsContainer .gridContainer .cardContainer h3 {
+  z-index: 2;
+  position: absolute;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.795);
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px 10px;
+}
+.projetsContainer .gridContainer .cardContainer a .projetsImg {
   width: 100%;
-  height: 400px;
+  height: 520px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.3s ease;
 }
-.gridContainer a .modifImg {
-  -o-object-position: 0px 0px;
-     object-position: 0px 0px;
+.projetsContainer .gridContainer .cardContainer a .projetsImg:hover {
+  transform: scale(1.02);
 }
-.gridContainer a .overlay {
+.projetsContainer .gridContainer .cardContainer a .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,14 +51,204 @@
   transition: opacity 0.3s ease;
   border-radius: 10px;
   flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.548);
 }
-.gridContainer a .overlay h3 {
+.projetsContainer .gridContainer .cardContainer a .overlay h4 {
   margin: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.712);
 }
-.gridContainer a .overlay p {
+.projetsContainer .gridContainer .cardContainer a .overlay p {
   margin-top: 10px;
   text-align: center;
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.712);
 }
-.gridContainer a .overlay:hover {
+.projetsContainer .gridContainer .cardContainer a:hover .overlay {
   opacity: 1;
+}
+
+@media (max-width: 980px) {
+  .projetsContainer .gridContainer {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 40px 15px;
+  }
+  .projetsContainer .gridContainer .cardContainer {
+    margin-bottom: 150px;
+    position: relative;
+  }
+  .projetsContainer .gridContainer .cardContainer h3 {
+    font-size: 15px;
+  }
+  .projetsContainer .gridContainer .cardContainer a {
+    z-index: 1;
+  }
+  .projetsContainer .gridContainer .cardContainer a .projetsImg {
+    width: 100%;
+    height: 400px;
+  }
+  .projetsContainer .gridContainer .cardContainer a .projetsImg:hover {
+    transform: scale(1);
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlay {
+    display: none;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive {
+    position: absolute;
+    top: 395px;
+    left: 0%;
+    max-height: 250px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.548);
+    opacity: 1;
+    border-radius: 0;
+    z-index: -1;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive h4 {
+    padding-top: 40px;
+    font-size: 3vw;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive p {
+    font-size: 1.2vh;
+  }
+}
+@media (max-width: 680px) {
+  .projetsContainer .gridContainer {
+    margin: 40px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .projetsContainer .gridContainer .cardContainer {
+    max-width: 600px;
+    height: 300px;
+  }
+  .projetsContainer .gridContainer .cardContainer h3 {
+    font-size: 15px;
+  }
+  .projetsContainer .gridContainer .cardContainer a {
+    max-width: 600px;
+    height: 300px;
+  }
+  .projetsContainer .gridContainer .cardContainer a .projetsImg {
+    max-width: 600px;
+    height: 300px;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive {
+    position: absolute;
+    top: 295px;
+    left: 0%;
+    max-height: 135px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.548);
+    opacity: 1;
+    border-radius: 0;
+    z-index: -1;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive h4 {
+    padding-top: 20px;
+    font-size: 4vw;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive p {
+    font-size: 1.5vh;
+    padding: 0px 15px;
+    overflow-y: auto;
+    text-align: justify;
+  }
+}
+@media (max-width: 525px) {
+  .projetsContainer .gridContainer {
+    margin: 40px 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .projetsContainer .gridContainer .cardContainer {
+    max-width: 600px;
+    height: 200px;
+  }
+  .projetsContainer .gridContainer .cardContainer a {
+    height: 300px;
+  }
+  .projetsContainer .gridContainer .cardContainer a .projetsImg {
+    height: 200px;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive {
+    position: absolute;
+    top: 195px;
+    left: 0%;
+    max-height: 135px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.548);
+    opacity: 1;
+    border-radius: 0;
+    z-index: -1;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive h4 {
+    padding-top: 20px;
+    font-size: 4vw;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive p {
+    font-size: 1.5vh;
+    overflow-y: auto;
+    text-align: justify;
+  }
+}
+@media (max-width: 375px) {
+  .projetsContainer {
+    margin-bottom: 50px;
+  }
+  .projetsContainer .gridContainer {
+    margin: 40px 5px 10px 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .projetsContainer .gridContainer .cardContainer {
+    max-width: 600px;
+    height: 200px;
+  }
+  .projetsContainer .gridContainer .cardContainer a {
+    height: 300px;
+  }
+  .projetsContainer .gridContainer .cardContainer a .projetsImg {
+    height: 200px;
+    border-radius: 5px;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive {
+    position: absolute;
+    top: 195px;
+    left: 0%;
+    max-height: 135px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.548);
+    opacity: 1;
+    border-radius: 0;
+    z-index: -1;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive h4 {
+    padding-top: 20px;
+    font-size: 4vw;
+  }
+  .projetsContainer .gridContainer .cardContainer a .overlayResponsive p {
+    font-size: 1.5vh;
+    overflow-y: auto;
+    text-align: justify;
+  }
 }/*# sourceMappingURL=projets.css.map */

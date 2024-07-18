@@ -2,18 +2,18 @@ import './nav.scss'
 
 function Nav() {
   return (
-    <div className="navContainer glassyBG">
-      <h1>Blandine Maurice</h1>
-      <nav>
+    <div className="navContainer" id="top">
+      <h1 className="glassyBG">Blandine Maurice&nbsp;/&nbsp;Portfolio</h1>
+      <nav className="glassyBG">
         <ul>
           <li>
-            <a>À propos</a>
+            <a href="#projets">/&nbsp;Mes projets</a>
           </li>
           <li>
-            <a>Mes projets</a>
+            <a href="#skills">/&nbsp;Mes skills</a>
           </li>
           <li>
-            <a>Contactez-moi</a>
+            <a href="#contact">/&nbsp;Contactez-moi</a>
           </li>
         </ul>
       </nav>

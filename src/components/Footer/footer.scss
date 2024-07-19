@@ -3,20 +3,26 @@
   width: 100%;
   margin-top: 150px;
   flex-direction: row;
-  padding: 0px 40px;
+  padding: 40px 40px;
   position: relative;
+  height: 150px;
 
   .footerText {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 1vw;
+
+    .brand {
+      font-size: 1vw;
+    }
+    .vercel {
+      font-size: 1vw;
+    }
   }
 
   .arrow {
     position: relative;
     width: 50px;
-    top: -80px;
+    top: -130px;
     left: 0%;
     cursor: pointer;
   }

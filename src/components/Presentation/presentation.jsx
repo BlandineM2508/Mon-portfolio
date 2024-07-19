@@ -1,5 +1,5 @@
 import './presentation.scss'
-import Photo from '../../assets/Photo_2.png'
+import Photo from '../../assets/Photo_2.webp'
 
 function Presentation() {
   return (

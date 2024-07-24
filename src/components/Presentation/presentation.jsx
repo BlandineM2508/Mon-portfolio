@@ -3,7 +3,7 @@ import Photo from '../../assets/Photo_2.webp'
 
 function Presentation() {
   return (
-    <div className="margin">
+    <section className="margin">
       <div className="glassyBG_Presentation">
         <div className="presentationContainer ">
           <h2 className="sectionTitle fontTitle">Qui suis-je ? </h2>
@@ -26,7 +26,7 @@ function Presentation() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

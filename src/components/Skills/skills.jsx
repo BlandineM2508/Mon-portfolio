@@ -8,7 +8,7 @@ import Git from '../../assets/Git.png'
 
 function Skills() {
   return (
-    <div className=" skillsContainer" id="skills">
+    <section className=" skillsContainer" id="skills">
       <h2 className="skillsTitle">Mes skills</h2>
       <div className="squareContainer">
         <div className="info BoxShadow_Orange">
@@ -42,7 +42,7 @@ function Skills() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -59,7 +59,7 @@ function Contact() {
   }
 
   return (
-    <div className="sectionContact">
+    <section className="sectionContact">
       <div className="contactContainer" id="contact">
         <h2>Contactez-moi !</h2>
         <form onSubmit={handleSubmit}>
@@ -100,7 +100,7 @@ function Contact() {
           {errorMessage && <p className="errorMsg">{errorMessage}</p>}
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 

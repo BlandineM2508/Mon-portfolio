@@ -94,7 +94,7 @@
   }
   .skillsContainer .squareContainer .info .text {
     padding: 15px;
-    font-size: 0.8rem;
+    font-size: 15px;
   }
 }
 @media (max-width: 420px) {
@@ -120,7 +120,7 @@
   .skillsContainer .squareContainer .info .text {
     align-self: center;
     padding: 0px;
-    font-size: 0.8rem;
+    font-size: 14px;
     width: 270px;
   }
 }/*# sourceMappingURL=skills.css.map */

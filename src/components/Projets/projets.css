@@ -69,7 +69,7 @@
   opacity: 1;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 950px) {
   .projetsContainer .gridContainer {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin: 40px 15px;
@@ -128,7 +128,7 @@
     height: 300px;
   }
   .projetsContainer .gridContainer .cardContainer h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .projetsContainer .gridContainer .cardContainer a {
     max-width: 600px;
@@ -156,10 +156,10 @@
   }
   .projetsContainer .gridContainer .cardContainer a .overlayResponsive h4 {
     padding-top: 20px;
-    font-size: 4vw;
+    font-size: 20px;
   }
   .projetsContainer .gridContainer .cardContainer a .overlayResponsive p {
-    font-size: 1.5vh;
+    font-size: 16px;
     padding: 0px 15px;
     overflow-y: auto;
     text-align: justify;
@@ -198,10 +198,9 @@
   }
   .projetsContainer .gridContainer .cardContainer a .overlayResponsive h4 {
     padding-top: 20px;
-    font-size: 4vw;
   }
   .projetsContainer .gridContainer .cardContainer a .overlayResponsive p {
-    font-size: 1.5vh;
+    font-size: 15px;
     overflow-y: auto;
     text-align: justify;
   }
@@ -247,7 +246,7 @@
     font-size: 4vw;
   }
   .projetsContainer .gridContainer .cardContainer a .overlayResponsive p {
-    font-size: 1.5vh;
+    font-size: 15px;
     overflow-y: auto;
     text-align: justify;
   }

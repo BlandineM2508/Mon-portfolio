@@ -71,6 +71,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               className="name"
+              aria-label="name"
             />
             {errors.name && <span>{errors.name}</span>}
           </div>
@@ -82,6 +83,7 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               className="email"
+              aria-label="email"
             />
             {errors.email && <span>{errors.email}</span>}
           </div>
@@ -92,6 +94,7 @@ function Contact() {
               value={formData.message}
               onChange={handleChange}
               className="message"
+              aria-label="message"
             />
             {errors.message && <span>{errors.message}</span>}
           </div>

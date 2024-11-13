@@ -1,134 +1,119 @@
 .margin {
-  margin: 0px 300px;
+  margin: 0 auto;
+  max-width: 1400px;
+  height: 100%;
+  /* Media Queries */
 }
 .margin .glassyBG_Presentation {
-  background: rgba(0, 0, 0, 0.247);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  margin: 120px 0px 140px 0px;
+  margin: 0px 20px 180px 0;
   position: relative;
+  border-radius: 10px;
 }
 .margin .glassyBG_Presentation .presentationContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 70px 0px 30px 0px;
-  border-radius: 10px;
+  text-align: center;
+  gap: 20px;
+}
+.margin .glassyBG_Presentation .presentationContainer .sectionTitle-presentation {
+  position: relative;
+  top: 250px;
+  height: auto;
 }
 .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -100px;
-  border-radius: 100%;
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: 150px;
+  left: -415px;
+  transform: translateX(-50%) rotate(-5deg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.856);
   filter: sepia(50%);
 }
 .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
+  max-width: 1200px;
+  padding: 20px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
+  background-color: rgba(31, 31, 31, 0.507);
 }
 .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
-  width: 100%;
-  max-width: 600px;
+  max-width: 100%;
   text-align: left;
+  margin: 0 0 0 200px;
 }
-@media (max-width: 1350px) {
-  .margin {
-    margin: 70px 100px;
-  }
+@media (max-width: 1368px) {
   .margin .glassyBG_Presentation {
-    margin: 0 10px 100px 10px;
+    margin: 0 40px 100px;
   }
-  .margin .glassyBG_Presentation .presentationContainer {
-    flex-direction: column;
-    text-align: center;
+  .margin .glassyBG_Presentation .presentationContainer .sectionTitle-presentation {
+    top: 250px;
+    left: auto;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
-    top: -90px;
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    top: 170px;
+    left: -280px;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer {
+    max-width: 900px;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
-    padding: 0;
+    padding: 0 0px;
+    margin: 0 0 0 150px;
   }
 }
 @media (max-width: 980px) {
-  .margin {
-    margin: 0;
-  }
   .margin .glassyBG_Presentation {
-    margin: 80px 10px 100px 10px;
+    margin: 0px 40px 100px;
   }
-  .margin .glassyBG_Presentation .presentationContainer {
-    flex-direction: column;
-    text-align: center;
+  .margin .glassyBG_Presentation .presentationContainer .sectionTitle-presentation {
+    top: 30px;
+    left: auto;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
-    top: -70px;
-    width: 120px;
-    height: 120px;
+    display: none;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer {
+    padding: 15px 15px;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
-    padding: 0 30px;
+    padding: 0 0px;
+    margin: 0 0 0 0px;
   }
 }
 @media (max-width: 650px) {
-  .margin {
-    margin: 0;
-  }
   .margin .glassyBG_Presentation {
-    margin: 80px 10px 100px 10px;
-  }
-  .margin .glassyBG_Presentation .presentationContainer {
-    flex-direction: column;
-    text-align: center;
+    margin: -80px 10px 100px;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
-    top: -60px;
-    left: 250px;
-    width: 100px;
-    height: 100px;
+    display: none;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer {
+    padding: 15px 10px;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 @media (max-width: 480px) {
   .margin {
-    margin: 0 10px;
+    margin: -130px 10px 100px;
+  }
+  .margin .glassyBG_Presentation {
+    margin: 40px 10px;
   }
   .margin .glassyBG_Presentation .presentationContainer {
     padding: 20px 10px;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
-    top: -70px;
-    width: 80px;
-    height: 80px;
-    margin: 10px 0;
+    display: none;
+  }
+  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer {
+    padding: 10px;
   }
   .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
-    padding: 0 15px;
-  }
-}
-@media (max-width: 415px) {
-  .margin .glassyBG_Presentation .presentationContainer {
-    padding: 20px 10px;
-  }
-  .margin .glassyBG_Presentation .presentationContainer .presentationPhoto {
-    left: 80%;
-    width: 80px;
-    height: 80px;
-    margin: 10px 0;
-  }
-  .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=presentation.css.map */

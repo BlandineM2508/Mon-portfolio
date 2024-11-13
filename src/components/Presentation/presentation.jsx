@@ -1,12 +1,12 @@
 import './presentation.scss'
-import Photo from '../../assets/Photo_2.webp'
+import Photo from '/Bm-Photo.JPG?url'
 
 function Presentation() {
   return (
     <section className="margin">
       <div className="glassyBG_Presentation">
         <div className="presentationContainer ">
-          <h2 className="sectionTitle fontTitle">Qui suis-je ? </h2>
+          <h2 className="sectionTitle-presentation fontTitle">Qui suis-je ?</h2>
           <img
             className="presentationPhoto"
             src={Photo}

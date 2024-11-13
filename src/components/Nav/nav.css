@@ -1,7 +1,7 @@
 .navContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   position: relative;
 }
 .navContainer h1 {

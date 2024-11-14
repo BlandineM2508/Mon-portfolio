@@ -10,8 +10,10 @@
 body {
   background-image: url('./assets/Wall03.png');
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: cover; /* Ajuste pour couvrir toute la page */
+  background-position: center; /* Centre l'image */
+  background-attachment: fixed; /* Garde l'image fixe lors du scroll */
+
   margin: 0;
   padding: 0;
 }

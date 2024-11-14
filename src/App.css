@@ -82,7 +82,7 @@ h4 {
 }
 
 .BoxShadow_Orange {
-  box-shadow: 0 4px 10px rgba(255, 81, 0, 0.842);
+  box-shadow: 0 4px 10px rgb(255, 145, 94);
 }
 
 .BoxShadow_Pink {
@@ -99,4 +99,8 @@ h4 {
 
 .BoxShadow_Green {
   box-shadow: 0 4px 10px rgb(139, 255, 30);
+}
+
+.BoxShadow_Red {
+  box-shadow: 0 4px 10px rgb(255, 55, 55);
 }/*# sourceMappingURL=App.css.map */

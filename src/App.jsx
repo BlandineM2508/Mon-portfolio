@@ -2,7 +2,7 @@ import Nav from './components/Nav/nav'
 import Presentation from './components/Presentation/presentation'
 import Projets from './components/Projets/projets'
 import Footer from './components/Footer/footer'
-import './App.css'
+import './App.scss'
 import Skills from './components/Skills/skills'
 import Contact from './components/Contact/contact'
 

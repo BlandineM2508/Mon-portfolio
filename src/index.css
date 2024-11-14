@@ -3,11 +3,7 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url('./assets/Wall03.png');
-  background-repeat: no-repeat;
-  background-size: cover; /* Ajuste pour couvrir toute la page */
-  background-position: center; /* Centre l'image */
-  background-attachment: fixed; /* Garde l'image fixe lors du scroll */
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,4 +16,20 @@
 
 body {
   margin: 0;
+  position: relative;
+  overflow-x: hidden; /* Évite les défilements horizontaux */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/Wall03.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Place le pseudo-élément en arrière-plan */
 }

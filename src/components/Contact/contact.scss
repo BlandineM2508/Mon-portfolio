@@ -18,7 +18,9 @@
     min-width: 300px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(87, 87, 87, 0.274);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     form {
       display: flex;
@@ -88,14 +90,10 @@
       }
 
       button:hover {
-        background: linear-gradient(
-          30deg,
-          rgb(83, 107, 175),
-          rgb(130, 63, 255),
-          violet
-        );
+        background: rgba(34, 34, 34, 0.897);
         transform: scale(1.02);
         color: aliceblue;
+        font-weight: 600;
         transition: background-position 0.5s, transform 0.3s;
         box-shadow: none;
       }

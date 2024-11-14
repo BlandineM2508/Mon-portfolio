@@ -1,8 +1,7 @@
 .skillsContainer {
-  background-image: url("../../assets/FondCircuits.png");
+  background-image: url("Fond.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0px;
+  background-size: cover;
   position: relative;
   z-index: 1;
   padding-bottom: 50px;
@@ -27,6 +26,8 @@
   height: 125px;
   border-radius: 5px;
   position: relative;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .skillsContainer .squareContainer .info .icon {
   position: absolute;
@@ -34,8 +35,8 @@
   left: 125px;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.63);
+  border-radius: 0%;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.63);
 }
 .skillsContainer .squareContainer .info .text {
   padding: 25px;

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footerContainer">
       <div className="footerText">
-        <p className="brand">Blandine Maurice ©</p>
+        <p className="brand">Blandine Maurice © 2024</p>
         <p className="vercel">Hébergé avec Vercel</p>
       </div>
 

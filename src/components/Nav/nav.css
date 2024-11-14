@@ -35,7 +35,7 @@
   transition: transform 0.1s ease, text-shadow 0.5s ease;
 }
 .navContainer nav ul li:hover {
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.925);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.925);
   cursor: pointer;
   transform: scale(105%);
 }

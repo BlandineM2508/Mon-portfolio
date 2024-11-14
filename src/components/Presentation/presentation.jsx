@@ -17,11 +17,21 @@ function Presentation() {
               Je suis Blandine Maurice, et j&apos;ai souhaité me reconvertir
               dans le developpement Web avec Openclassrooms afin d&apos;avoir
               une formation adaptée à mes besoins d&apos;integrateur Web. Je
-              suis motivée et pleine de ressources ! J&apos;adore découvrir de
-              nouvelles choses au quotidien et apprendre davatange. Je vous
-              souhaite la Bienvenue sur mon Porfolio conçu par mes soins ! Ici,
-              vous y trouverez mes divers projets et les compétences acquises
-              lors mon parcours.
+              vous souhaite la Bienvenue sur mon Porfolio conçu par mes soins,
+              codé avec React ! Ici, vous y trouverez mes divers projets et les
+              compétences acquises lors mon parcours de formation. Il m&apos;a
+              été donné de faire plusieurs travaux pratiques de mise en
+              situation qui ont chacun été soumis à une soutenance afin de
+              valider le projet. <br></br>
+              <br></br>
+              Je suis actuellement à la recherche d&apos;une alternance pour
+              pouvoir gagner en experience sur le terrain et en apprendre
+              davantage sur le metier de developpeur web. J&apos;aimerais
+              compléter mon parcours avec une formation qui aurait pour objectif
+              de me specialiser dans la conception front-end d&apos;application
+              web en React. Par ailleurs, je reste ouverte à d&apos;autres
+              apprentissages dans le métier car cela m&apos;interesse et me
+              motive !
             </p>
           </div>
         </div>

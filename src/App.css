@@ -10,15 +10,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(
-    0deg,
-    #298585,
-    #4ecace,
-    rgba(214, 78, 123, 0.548),
-    #a44ed6,
-    #636ece
-  );
-  background-size: 100% 100%;
+  background-image: url('Wall03.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 html {

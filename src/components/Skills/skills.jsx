@@ -5,6 +5,7 @@ import Js from '../../assets/Js.png'
 import Sass from '../../assets/Sass.png'
 import Redux from '../../assets/Redux.png'
 import Git from '../../assets/Git.png'
+import Figma from '../../assets/Figma.png'
 
 function Skills() {
   return (
@@ -25,9 +26,7 @@ function Skills() {
         </div>
         <div className="info BoxShadow_Pink">
           <img alt="icone sass" className="icon" src={Sass} />
-          <p className="text">
-            Utilisation du préprocesseur SASS et de sa synthaxe.
-          </p>
+          <p className="text">Utilisation du préprocesseur SASS.</p>
         </div>
         <div className="info BoxShadow_Purple">
           <img alt="icone redux" className="icon" src={Redux} />
@@ -37,6 +36,12 @@ function Skills() {
         </div>
         <div className="info BoxShadow_Green">
           <img alt="icone git" className="icon" src={Git} />
+          <p className="text">
+            Utilisation de Git et GitHub afin de versionner mon travail.
+          </p>
+        </div>
+        <div className="info BoxShadow_Green">
+          <img alt="icone figma" className="icon " src={Figma} />
           <p className="text">
             Utilisation de Git et GitHub afin de versionner mon travail.
           </p>

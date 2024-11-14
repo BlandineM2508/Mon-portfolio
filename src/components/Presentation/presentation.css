@@ -30,6 +30,7 @@
   transform: translateX(-50%) rotate(-5deg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.856);
   filter: sepia(50%);
+  z-index: 1;
 }
 .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer {
   max-width: 1200px;
@@ -37,6 +38,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.493);
   background-color: rgba(31, 31, 31, 0.507);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .margin .glassyBG_Presentation .presentationContainer .presentationTextContainer p {
   max-width: 100%;

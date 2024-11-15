@@ -19,8 +19,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url('/Wall03.png');
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 20%;
-  background-attachment: static;
+  background-position: 0%;
+  background-attachment: fixed;
 }

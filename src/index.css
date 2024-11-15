@@ -7,10 +7,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('/Wall03.png');
-  background-attachment: fixed;
-  height: auto;
-  background-repeat: no-repeat;
 }
 
 * {

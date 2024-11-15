@@ -14,12 +14,8 @@
 }
 
 body {
-  margin: 0;
-  overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
   background-image: url('/Wall03.png');
   background-size: cover;
-  background-position: 0%;
+  background-position: center;
   background-attachment: fixed;
 }

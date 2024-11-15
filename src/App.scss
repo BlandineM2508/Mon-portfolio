@@ -8,10 +8,16 @@
 }
 
 .background-global {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url('/Wall03.png');
-  background-attachment: fixed;
-  height: auto;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 body {
@@ -21,6 +27,7 @@ body {
 
 html {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .glassyBG_3 {

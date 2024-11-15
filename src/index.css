@@ -15,13 +15,12 @@
 
 body {
   margin: 0;
-  position: relative;
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   background-image: url('/Wall03.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: 20%;
+  background-attachment: static;
 }

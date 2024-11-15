@@ -8,6 +8,7 @@
 }
 
 .background-global {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -17,6 +18,11 @@
   background-size: cover;
   background-position: center;
   z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
 }
 
 body {

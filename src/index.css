@@ -15,8 +15,8 @@
 
 body {
   background-image: url('/Wall03.png');
-  background-size: fill;
-  background-position: center;
+  background-size: cover;
+  background-position: flex-start;
   background-attachment: fixed;
 
   background-repeat: no-repeat;

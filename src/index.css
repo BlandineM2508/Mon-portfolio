@@ -17,18 +17,10 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('./assets/Wall03.png');
+  background-image: url('/Wall03.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: -1;
 }

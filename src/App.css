@@ -5,10 +5,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-image: url("./assets/Wall03.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
 }
 
 body {

@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     title: 'Projet Ohmyfood',
     link: 'https://github.com/BlandineM2508/OhMyFood_OC',
-    image: '../assets/Ohmyfood.webp',
+    image: '/Ohmyfood.webp',
     alt: 'projet oh my food',
     description: 'Application de restauration',
     details:
@@ -23,7 +23,7 @@ const projects = [
     id: 3,
     title: 'Projet Print it',
     link: 'https://github.com/BlandineM2508/Print-it-OC',
-    image: '../assets/Printit.webp',
+    image: '/Printit.webp',
     alt: 'projet print it',
     description: "Site statique d'une agence d'imprimerie",
     details:
@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: 'Projet Sophie Bluel',
     link: 'https://github.com/BlandineM2508/Portfolio_Architecte_Sophie_Bluel',
-    image: '../assets/SophieBluel.webp',
+    image: '/SophieBluel.webp',
     alt: 'projet sophie bluel',
     description: "Portfolio d'une architecte d'intérieur, Sophie Bluel",
     details:
@@ -43,7 +43,7 @@ const projects = [
     id: 5,
     title: 'Projet Qwenta',
     link: 'https://docs.google.com/presentation/d/1wS0KbOFyUQXj79GQd17H-f1sty2d9wGBYxusazS8c5A/edit?usp=sharing',
-    image: '../assets/Qwenta.webp',
+    image: '/Qwenta.webp',
     alt: 'projet qwenta',
     description: 'Application de création de menus destinée aux restaurateurs',
     details:
@@ -53,7 +53,7 @@ const projects = [
     id: 6,
     title: 'Projet Kasa',
     link: 'https://github.com/BlandineM2508/kasa',
-    image: '../assets/Kasa.webp',
+    image: '/Kasa.webp',
     alt: 'projet kasa',
     description: 'Application de location immobilière avec React',
     details:
@@ -63,7 +63,7 @@ const projects = [
     id: 7,
     title: 'Projet Nina Carducci',
     link: 'https://github.com/BlandineM2508/Nina_Carducci_OC',
-    image: '../assets/NinaC.webp',
+    image: '/NinaC.webp',
     alt: 'projet Nina Carducci',
     description: 'Portfolio de la photographe Nina Carducci',
     details:
@@ -73,7 +73,7 @@ const projects = [
     id: 8,
     title: 'Projet 724Events',
     link: 'https://github.com/BlandineM2508/Debuggez-une-application-React.JS-main',
-    image: '../assets/724events.webp',
+    image: '/724events.webp',
     alt: 'projet 724Events',
     description: "Site d'une agence d'événementiel",
     details:
@@ -83,7 +83,7 @@ const projects = [
     id: 9,
     title: 'Projet Argent Bank',
     link: 'https://github.com/BlandineM2508/ArgentBank-website',
-    image: '../assets/ArgentBank.webp',
+    image: '/ArgentBank.webp',
     alt: 'projet Argent Bank',
     description: 'Application bancaire',
     details:

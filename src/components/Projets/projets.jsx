@@ -10,7 +10,7 @@ function Projets() {
           {projects.map((project) => (
             <div className="cardContainer" key={project.id}>
               <h3>{project.title}</h3>
-              <a href={project.link} target="_blank">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <article>
                   <img
                     src={project.image}

@@ -89,6 +89,16 @@ const projects = [
     details:
       "Pour ce projet, j'ai utilisé React et Redux pour rendre l'application performante et intégré le front-end avec le back-end via des appels API.",
   },
+  {
+    id: 10,
+    title: 'Projet Site de Rémi Encelle',
+    link: 'https://github.com/BlandineM2508/ArgentBank-website',
+    image: '../src/assets/ArgentBank.webp',
+    alt: 'projet Argent Bank',
+    description: 'Application bancaire',
+    details:
+      "Pour ce projet, j'ai utilisé React et Redux pour rendre l'application performante et intégré le front-end avec le back-end via des appels API.",
+  },
 ]
 
 export default projects

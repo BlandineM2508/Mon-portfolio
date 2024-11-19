@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: 'Projet Booki',
     link: 'https://github.com/BlandineM2508/Booki',
-    image: '../src/assets/Booki.webp',
+    image: '../assets/Booki.webp',
     alt: 'projet Booki',
     description: "Site d'une agence de voyage",
     details:
@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     title: 'Projet Ohmyfood',
     link: 'https://github.com/BlandineM2508/OhMyFood_OC',
-    image: '../src/assets/Ohmyfood.webp',
+    image: '../assets/Ohmyfood.webp',
     alt: 'projet oh my food',
     description: 'Application de restauration',
     details:
@@ -23,7 +23,7 @@ const projects = [
     id: 3,
     title: 'Projet Print it',
     link: 'https://github.com/BlandineM2508/Print-it-OC',
-    image: '../src/assets/Printit.webp',
+    image: '../assets/Printit.webp',
     alt: 'projet print it',
     description: "Site statique d'une agence d'imprimerie",
     details:
@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: 'Projet Sophie Bluel',
     link: 'https://github.com/BlandineM2508/Portfolio_Architecte_Sophie_Bluel',
-    image: '../src/assets/SophieBluel.webp',
+    image: '../assets/SophieBluel.webp',
     alt: 'projet sophie bluel',
     description: "Portfolio d'une architecte d'intérieur, Sophie Bluel",
     details:
@@ -43,7 +43,7 @@ const projects = [
     id: 5,
     title: 'Projet Qwenta',
     link: 'https://docs.google.com/presentation/d/1wS0KbOFyUQXj79GQd17H-f1sty2d9wGBYxusazS8c5A/edit?usp=sharing',
-    image: '../src/assets/Qwenta.webp',
+    image: '../assets/Qwenta.webp',
     alt: 'projet qwenta',
     description: 'Application de création de menus destinée aux restaurateurs',
     details:
@@ -53,7 +53,7 @@ const projects = [
     id: 6,
     title: 'Projet Kasa',
     link: 'https://github.com/BlandineM2508/kasa',
-    image: '../src/assets/Kasa.webp',
+    image: '../assets/Kasa.webp',
     alt: 'projet kasa',
     description: 'Application de location immobilière avec React',
     details:
@@ -63,7 +63,7 @@ const projects = [
     id: 7,
     title: 'Projet Nina Carducci',
     link: 'https://github.com/BlandineM2508/Nina_Carducci_OC',
-    image: '../src/assets/NinaC.webp',
+    image: '../assets/NinaC.webp',
     alt: 'projet Nina Carducci',
     description: 'Portfolio de la photographe Nina Carducci',
     details:
@@ -73,7 +73,7 @@ const projects = [
     id: 8,
     title: 'Projet 724Events',
     link: 'https://github.com/BlandineM2508/Debuggez-une-application-React.JS-main',
-    image: '../src/assets/724events.webp',
+    image: '../assets/724events.webp',
     alt: 'projet 724Events',
     description: "Site d'une agence d'événementiel",
     details:
@@ -83,22 +83,22 @@ const projects = [
     id: 9,
     title: 'Projet Argent Bank',
     link: 'https://github.com/BlandineM2508/ArgentBank-website',
-    image: '../src/assets/ArgentBank.webp',
+    image: '../assets/ArgentBank.webp',
     alt: 'projet Argent Bank',
     description: 'Application bancaire',
     details:
       "Pour ce projet, j'ai utilisé React et Redux pour rendre l'application performante et intégré le front-end avec le back-end via des appels API.",
   },
-  {
+  /*   {
     id: 10,
     title: 'Projet Site de Rémi Encelle',
     link: 'https://github.com/BlandineM2508/ArgentBank-website',
-    image: '../src/assets/ArgentBank.webp',
+    image: '../assets/ArgentBank.webp',
     alt: 'projet Argent Bank',
     description: 'Application bancaire',
     details:
       "Pour ce projet, j'ai utilisé React et Redux pour rendre l'application performante et intégré le front-end avec le back-end via des appels API.",
-  },
+  }, */
 ]
 
 export default projects

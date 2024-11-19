@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: 'Projet Booki',
     link: 'https://github.com/BlandineM2508/Booki',
-    image: '/assets/Booki.webp',
+    image: '/Booki.webp',
     alt: 'projet Booki',
     description: "Site d'une agence de voyage",
     details:

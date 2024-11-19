@@ -6,6 +6,7 @@ import Sass from '../../assets/Sass.png'
 import Redux from '../../assets/Redux.png'
 import Git from '../../assets/Git.png'
 import Figma from '../../assets/Figma.png'
+import Seo from '../../assets/Seo.png'
 
 function Skills() {
   return (
@@ -28,7 +29,7 @@ function Skills() {
           <img alt="icone react" className="icon" src={ReactIcon} />
           <p className="text">Utilisation de React.</p>
         </div>
-        <div className="info BoxShadow_Purple">
+        <div className="info BoxShadow_Lavender">
           <img alt="icone redux" className="icon" src={Redux} />
           <p className="text">
             Utilistion de Redux au sein d&apos;une application React.
@@ -44,6 +45,13 @@ function Skills() {
           <img alt="icone figma" className="icon " src={Figma} />
           <p className="text">
             Utilisation de Figma pour la création de maquettes.
+          </p>
+        </div>
+        <div className="info BoxShadow_Purple">
+          <img alt="icone SEO" className="icon " src={Seo} />
+          <p className="text">
+            Amélioration de la visibilité d&apos;un site web dans les résultats
+            des moteurs de recherche.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import './projets.scss'
-import projects from '../../data/projectsData'
+import projects from '../../assets/projectsData'
 
 function Projets() {
   return (

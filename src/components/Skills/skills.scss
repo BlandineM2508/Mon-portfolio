@@ -4,8 +4,7 @@
   background-size: cover;
   position: relative;
   z-index: 1;
-  padding-bottom: 50px;
-  margin: 220px 100px 0px 100px;
+  padding-bottom: 0px;
 
   .skillsTitle {
     margin-bottom: 50px;
@@ -15,7 +14,6 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    height: 300px;
     flex-wrap: wrap;
     margin-bottom: 0px;
 
@@ -52,8 +50,40 @@
 
   @media (max-width: 920px) {
     padding: 10px;
-    margin: 0px;
-    flex-direction: column;
+
+    .skillsTitle {
+      margin-bottom: 10px;
+    }
+
+    .squareContainer {
+      gap: 30px;
+      height: 800px;
+
+      .info {
+        margin: 5px;
+        padding: 20px 30px;
+        width: 100%;
+        height: auto;
+        .icon {
+          top: -15px;
+          left: -10px;
+          width: 30px;
+          height: 30px;
+        }
+
+        .text {
+          align-self: center;
+          padding: 0px;
+          font-size: 1rem;
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 770px) {
+    padding: 10px;
+
     flex-wrap: nowrap;
     .skillsTitle {
       margin-bottom: 10px;
@@ -61,6 +91,7 @@
 
     .squareContainer {
       gap: 30px;
+      height: 300px;
 
       .info {
         margin: 5px;
@@ -89,6 +120,7 @@
 
     .squareContainer {
       gap: 30px;
+      height: 600px;
 
       .info {
         margin: 5px;

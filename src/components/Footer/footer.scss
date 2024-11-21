@@ -2,30 +2,47 @@
   background-color: rgba(34, 34, 34, 0.897);
   width: 100%;
   margin-top: 150px;
-  flex-direction: row;
   position: relative;
-  height: 100px;
+  height: 130px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  .footerText {
+  .footerContent {
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
-    gap: 100px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
 
-    .brand {
-      justify-content: flex-start;
-      width: 400px;
+    .textColumn {
+      color: white;
       font-size: 15px;
+
+      .brand {
+        font-size: 15px;
+      }
     }
-    .vercel {
+
+    .linkColumn {
+      display: flex;
       justify-content: flex-end;
-      width: 400px;
-      font-size: 15px;
+
+      .link {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-family: 'Maven Pro', sans-serif;
+
+        &:hover {
+          color: white;
+        }
+      }
     }
   }
 
@@ -38,38 +55,17 @@
   }
 
   @media (max-width: 1024px) {
-    .footerText {
-      padding: 0 20px;
-      width: 800px;
-      gap: 0;
-
-      .brand {
-        width: 300px;
-        font-size: 15px;
-      }
-      .vercel {
-        width: 300px;
-        font-size: 15px;
-      }
+    .footerContent {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-    .arrow {
-      top: -30px;
+    .linkColumn {
+      margin-top: 10px;
     }
   }
 
   @media (max-width: 750px) {
-    .footerText {
-      gap: 200px;
-      width: 100%;
-      .brand {
-        font-size: 12px;
-        width: 200px;
-      }
-      .vercel {
-        font-size: 12px;
-        width: 200px;
-      }
-    }
     .arrow {
       width: 45px;
       top: -25px;
@@ -77,19 +73,6 @@
   }
 
   @media (max-width: 430px) {
-    padding: 0px 5px;
-    .footerText {
-      gap: 0px;
-      .brand {
-        font-size: 12px;
-        width: 100px;
-      }
-      .vercel {
-        font-size: 12px;
-        width: 100px;
-      }
-    }
-
     .arrow {
       width: 40px;
     }

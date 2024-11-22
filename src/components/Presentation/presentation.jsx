@@ -1,5 +1,5 @@
 import './presentation.scss'
-import Photo from '/Photo_BM.webp?url'
+import Photo from '/Photo_BM0.webp?url'
 
 function Presentation() {
   return (
